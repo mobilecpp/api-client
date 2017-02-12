@@ -1,0 +1,15 @@
+[submodule "deps/djinni"]
+	path = deps/djinni
+	url = https://github.com/mobilecpp/djinni.git
+[submodule "polly"]
+	path = polly
+	url = https://github.com/mobilecpp/polly.git
+[submodule "deps/curl-android-ios"]
+	path = deps/curl-android-ios
+	url = https://github.com/mobilecpp/curl-android-ios.git
+[submodule "deps/cpr"]
+	path = deps/cpr
+	url = https://github.com/mobilecpp/cpr.git
+[submodule "deps/json"]
+	path = deps/json
+	url = https://github.com/mobilecpp/json.git
