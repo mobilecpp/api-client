@@ -10,3 +10,6 @@
 [submodule "deps/json"]
 	path = deps/json
 	url = https://github.com/mobilecpp/json.git
+[submodule "deps/polly"]
+	path = deps/polly
+	url = https://github.com/mobilecpp/polly.git
