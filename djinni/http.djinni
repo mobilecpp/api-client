@@ -1,0 +1,23 @@
+HTTPResult = record {
+
+  body: string;
+
+  errorCode: i32;
+
+  error: string;
+
+}
+
+HTTPClient = interface +c {
+
+  sharedInstance(): HTTPClient;
+
+  getBaseUrl(): string;
+
+  setBaseUrl(baseUrl: string);
+
+  get(url: string);
+
+  post(url: string);
+
+}

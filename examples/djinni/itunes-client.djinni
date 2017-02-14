@@ -1,0 +1,27 @@
+@import "../../djinni/http.djinni"
+
+iTunesTrack = interface +c {
+
+  getArtist(): string;
+
+  getImageUrl(): string;
+
+  getName(): string;
+
+  getPlaybackUrl(): string;
+
+}
+
+iTunesSearchResult = record {
+
+  tracks: list<iTunesTrack>;
+
+  apiResult: HTTPResult;
+
+}
+
+iTunesClient = interface +c {
+
+  searchTracksWithQuery(query: string): iTunesSearchResult;
+
+}

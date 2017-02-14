@@ -1,20 +1,20 @@
 #! /usr/bin/env bash
 
-base_dir=$(cd "`dirname "0"`" && pwd)
-in="$base_dir/djinni/libskycatch.djinni"
+base_dir=$(cd "`dirname "0"`" && pwd)/../
+in="$base_dir/djinni/http.djinni"
 cpp_out="$base_dir/generated-src/cpp"
 jni_out="$base_dir/generated-src/jni"
 objc_out="$base_dir/generated-src/objc"
-java_out="$base_dir/generated-src/java/com/skycatch/lib"
-java_package="com.skycatch.lib"
-objc_prefix="SKY"
-deps/djinni/src/run \
+java_out="$base_dir/generated-src/java/com/mobilecpp/http"
+java_package="com.mobilecpp.http"
+objc_prefix="MCP"
+$base_dir/deps/djinni/src/run \
    --java-out $java_out \
    --java-package $java_package \
    --ident-java-field mFooBar \
     \
     --cpp-out $cpp_out \
-    --cpp-namespace skycatch \
+    --cpp-namespace mobilecpp \
     --ident-cpp-enum-type foo_bar \
     \
     --jni-out $jni_out \
