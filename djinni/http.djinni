@@ -10,7 +10,7 @@ HTTPResult = record {
 
 HTTPClient = interface +c {
 
-  sharedInstance(): HTTPClient;
+  static sharedInstance(): HTTPClient;
 
   getBaseUrl(): string;
 
